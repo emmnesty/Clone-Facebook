@@ -34,34 +34,53 @@
       </div>
 
       <div class="div-direita">
-        <!-- Acima está o pai delas-->
-        <!-- Aqui está meus inputs-->
         <div class="campos-input">
-          <div class="div-nomeUsuario">
-            <input
-              type="text"
-              class="nomeUsuario"
-              placeholder="Email ou telefone"
-            />
-          </div>
+          <form
+            method="post"
+            class="formulario"
+            action=""
+            onSubmit="return ( verifica() )"
+            name="frmEnvia"
+          >
+            <div class="div-nomeUsuario">
+              <input
+                type="text"
+                id="email"
+                class="nomeUsuario"
+                placeholder="Email ou telefone"
+                required
+                name="email"
+                id="email"
+                onblur="checarEmail();"
+              />
+            </div>
 
-          <div class="div-senha">
-            <input type="password" class="senha" placeholder="Senha" />
+            <div class="div-senha">
+              <input
+                type="password"
+                class="senha"
+                placeholder="Senha"
+                required
+              />
+            </div>
+            <button class="botaoEnviar" type="submit">Entrar</button>
+            <a class="esqueceuSenha" href="#">Esqueceu a senha?</a>
+            <div class="div-vazia">
+              <hr size="1" width="300" align="center" noshade color="#dadde1" />
+            </div>
+            <button class="botaoNovaConta" type="submit">
+              Criar conta nova
+            </button>
+          </form>
+
+          <div class="criarPaginaP">
+            <a href="#" class="criarPagina">Criar uma Página</a>
+            para uma celebridade, uma marca ou uma empresa.
           </div>
-          <button class="botaoEnviar" type="submit">Entrar</button>
-          <a href="#">Esqueceu a senha?</a>
-          <div class="div-vazia">
-            <hr size="1" width="300" align="center" noshade color="#dadde1" />
-          </div>
-          <button class="botaoNovaConta" type="submit">Criar conta nova</button>
         </div>
-        <!-- Aqui termina meus inputs-->
-
-        <!-- <div class="final">
-                <a href="#" class="criarPagina">Criar uma Página</a>
-                para uma celebridade, uma marca ou uma empresa.
-            </div> -->
       </div>
     </div>
+
+    <script src="assets/main.js"></script>
   </body>
 </html>

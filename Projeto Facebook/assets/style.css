@@ -49,8 +49,22 @@ header {
   width: 50%;
   background-color: #f0f2f5;
 }
-
+/* 
 .campos-input {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 360px;
+  padding: 0 0 16px;
+  margin: 112px 0 0 40px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+} */
+
+.formulario {
   align-items: center;
   background-color: #fff;
   display: flex;
@@ -98,6 +112,15 @@ header {
   background-color: #749fd8;
 }
 
+.esqueceuSenha {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
 .div-vazia {
   align-items: center;
   display: flex;
@@ -115,11 +138,18 @@ header {
   color: #fff;
 }
 
-.final {
+.criarPaginaP {
+  margin-top: 20px;
+}
+
+.criarPagina {
   border-top: none;
   color: #1c1e21;
   font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   padding-top: 0;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
 }
